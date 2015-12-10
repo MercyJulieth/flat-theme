@@ -46,3 +46,7 @@ footer *{outline: green solid 1px;}
 	color: white;
 	border-color:#d9534f;
 }
+.list-footer li a{
+	color: white;
+	text-decoration: none;
+}
