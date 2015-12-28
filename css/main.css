@@ -14,9 +14,25 @@
   clear: both;
 }
 
-.bg-blue{background-color: #34495e ; }
-.bg-dark-blue{background-color: #123e50 ; }
-.bg-green{background-color: #2ecc71 ; }
-.bg-dark-green{background-color: #1c7a44 ; }
-.bg-red{background-color: #e74c3c ; }
-.bg-{background-color: #34495e ; }
+.bg-blue{
+	background-color: #34495e ;
+	color:white; }
+
+.bg-dark-blue{
+	background-color: #123e50 ;
+	color:white; }
+
+.bg-green{
+	background-color: #2ecc71 ;
+	color:white; }
+
+.bg-dark-green{
+	background-color: #1c7a44 ; 
+	color:white;}
+
+.bg-red{
+	background-color: #e74c3c ;
+	color:white; 
+}
+
+.text-green{color:#2ecc71; }
