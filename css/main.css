@@ -39,6 +39,7 @@
 }
 
 .text-green{color:#2ecc71; }
+
 .text-white{
 	color:white;
 }
@@ -78,3 +79,19 @@
 	display: block;
 	width: 100%;
 }
+
+/*footer================================================================*/
+footer *{outline: green solid 1px;}
+.list-company{
+	list-style: none;
+}
+.bf{
+	background: #d9534f;
+	color: white;
+	border-color:#d9534f;
+}
+.list-footer li a{
+	color: white;
+	text-decoration: none;
+}
+
