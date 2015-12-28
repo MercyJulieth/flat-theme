@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <title>Home | Flat Theme</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <!--[if lt IE 9]>
@@ -23,7 +23,7 @@
   <body>
 
     <!-- Inserte código aqui -->
-    <header class="bg-blue">
+    
       <nav class="navbar bg-blue ">
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -50,27 +50,53 @@
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
       </nav>
-    </header>
-    <div class="portada">
-      <div class="slider">
-          <ul>
-            <li><img src="images/slider/bg1.jpg" alt="Banner"></li>
-            <li><img src="images/slider/bg2.jpg" alt="Banner"></li>
-            <li><img src="images/slider/bg3.jpg" alt="Banner"></li>
-          </ul>
-      </div>
-      <div class="container text-white">
-      <div class="text">
-        <h1>Powerful and responsive Web design</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nulla iste facere.</p>
-      </div>
+    
+    
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
         
-        
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url(images/slider/bg1.jpg);"></div>
+                
+            </div>
+            <div class="item ">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url(images/slider/bg2.jpg);"></div>
+                
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url(images/slider/bg3.jpg);"></div>
+            </div>
+            <div class="container">
+              <div class="c-caption text-white" >
+                    <h1>Powerful and responsive Web Design</h1>
+                    <p>   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, tempora unde consequatur ex sint sequi official.</p>
+            </div></div>
+        </div>
+
+    </div>
+
+    <div class="social-net bg-green pd-2">
+      <div class="container">
+        <div class="col-sm-4">
+          <a class="icono text-white" href="http://facebook.com/">
+            <i class="fa fa-twitter bg-dark-green"></i>
+          
+          <h3>Twitter Marketing</h3> </a>
+        </div>
+        <div class="col-sm-4">
+          
+          <h3>Facebook Marketing</h3>
+        </div>
+        <div class="col-sm-4">
+          <h3>Google Plus Marketing</h3>
+        </div>
       </div>
     </div>
-    <p><i class="fa fa-gear"></i> dvkldshfhds</p>
-
-
 
     <footer class="footer1 bg-blue">
     <div class="container">
@@ -167,33 +193,9 @@
   {
     //inicio de aplicación
     $(".main-nav a").click(selectMenu);
-    initSlider();
+    
   }
 
-  function initSlider()
-  {
-    setInterval(cambiarImagen, 4000);
-    valor=$('.slider li img').style.width;
-     console.log(valor);
-      console.log('safgsdghh');
-    anchoSlider = $('.slider li').length * valor;
-    console.log(valor);
-    console.log($('.slider li').length);
-  }
-  function cambiarImagen()
-  {
-    console.log('Cambia de imagen');
-
-    if(sliderPosX > -(anchoSlider - valor))
-    {
-      sliderPosX -= valor;
-    }else{
-      sliderPosX = 0;
-    }
-
-    //$('.slider ul').css('margin-left', sliderPosX +'px');
-    TweenMax.to(".slider ul", 1, {marginLeft: sliderPosX +'px', ease: Power4.easeInOut});
-  }
 
   function selectMenu()
   {
