@@ -22,9 +22,111 @@
   </head>
   <body>
     <!-- Inserte código aqui -->
+    <header class="bg-blue">
+      <nav class="navbar bg-blue ">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>  
+            </button>
+            <a class="navbar-brand" href="#"> <i class="text-green fa fa-heart"> </i> Flat Theme</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class=" nav navbar-nav navbar-right">
+              <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+              <li><a href="#">  <i class="text-green fa fa-"> </i> About Us</a></li>
+              <li><a href="#"> <i class="fa fa-cog"></i>  Services</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </header>
+    <div class="portada">
+      <div class="slider">
+          <ul>
+            <li><img src="images/slider/bg1.jpg" alt="Banner"></li>
+            <li><img src="images/slider/bg2.jpg" alt="Banner"></li>
+            <li><img src="images/slider/bg3.jpg" alt="Banner"></li>
+          </ul>
+      </div>
+      <div class="container text-white">
+      <div class="text">
+        <h1>Powerful and responsive Web design</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nulla iste facere.</p>
+      </div>
+        
+        
+      </div>
+    </div>
+    <p><i class="fa fa-gear"></i> dvkldshfhds</p>
+
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+
+<script>
+
+  $(document).ready(init);
+
+  var sliderPosX = 0;
+  var anchoSlider = 0;
+  var valor=0;
+
+  function init()
+  {
+    //inicio de aplicación
+    $(".main-nav a").click(selectMenu);
+    initSlider();
+  }
+
+  function initSlider()
+  {
+    setInterval(cambiarImagen, 4000);
+    valor=$('.slider li img').style.width;
+     console.log(valor);
+      console.log('safgsdghh');
+    anchoSlider = $('.slider li').length * valor;
+    console.log(valor);
+    console.log($('.slider li').length);
+  }
+  function cambiarImagen()
+  {
+    console.log('Cambia de imagen');
+
+    if(sliderPosX > -(anchoSlider - valor))
+    {
+      sliderPosX -= valor;
+    }else{
+      sliderPosX = 0;
+    }
+
+    //$('.slider ul').css('margin-left', sliderPosX +'px');
+    TweenMax.to(".slider ul", 1, {marginLeft: sliderPosX +'px', ease: Power4.easeInOut});
+  }
+
+  function selectMenu()
+  {
+    //$(".main-nav a").removeClass('active');
+    //$(this).addClass('active');
+
+    TweenMax.to(".main-nav a", 1, {scale:1 , rotation:0 , ease: Elastic.easeOut});
+    TweenMax.to(this, 1, {scale:1.5 , rotation:45 , ease: Back.easeOut});
+  }
+
+</script>
+
+
   </body>
 </html>
