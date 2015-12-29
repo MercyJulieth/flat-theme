@@ -102,6 +102,16 @@
 	border-radius: 100%;
 	font-size: 2.5em;
 }
+/*seccion gris---+++++++++++++++++++++++++++++++++++++++*/
+.cont-img{
+	box-sizing:border-box;
+	padding: 10px 10px 2px;
+	background: white;
+	/*border: solid gray 1px; */
+}
+.gris{
+	padding: 50px 0;
+}
 /*seccion red--- cients+++++++++++++++++++++++++++++++*/
 section *{outline: green solid 1px;}
 .rojo {padding: 50px 0;}
