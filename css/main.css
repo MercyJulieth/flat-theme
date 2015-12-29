@@ -116,7 +116,7 @@
 section *{outline: green solid 1px;}
 .rojo {padding: 50px 0;}
 
-/*footer================================================================*/
+/*footer +++++++++++++++++++++++++++++++++++++++++++++*/
 footer *{outline: green solid 1px;}
 .list-company{
 	list-style: none;
@@ -139,3 +139,17 @@ footer *{outline: green solid 1px;}
 .list-footer li i{font-size: 20px;}
 .footer{padding: 30px 0;}
 .footer1{line-height: 50px;}
+
+/*SERVICES================================================================*/
+
+.cont-ico i{
+	font-size: 35px;
+	position: relative;
+	top: 20px;
+	color: white;
+	padding: 15px;
+	background: gray;
+	border-radius: 100%;
+}
+
+article *{outline: solid 1px green;}
