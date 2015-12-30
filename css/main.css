@@ -14,7 +14,7 @@
   clear: both;
 }
 
-*{
+{
 	outline:red solid 1px;
 }
 .bg-blue{
@@ -102,21 +102,21 @@
 	border-radius: 100%;
 	font-size: 2.5em;
 }
-/*seccion gris---+++++++++++++++++++++++++++++++++++++++*/
+/*seccion gris---HOME+++++++++++++++++++++++++++++++++++++++*/
 .cont-img{
 	box-sizing:border-box;
 	padding: 10px 10px 2px;
 	background: white;
-	/*border: solid gray 1px; */
+	border: solid #E6E6FA 1px;
 }
 .gris{
 	padding: 50px 0;
 }
 /*seccion red--- cients+++++++++++++++++++++++++++++++*/
-section *{outline: green solid 1px;}
+sectio *{outline: green solid 1px;}
 .rojo {padding: 50px 0;}
 
-/*footer================================================================*/
+/*footer +++++++++++++++++++++++++++++++++++++++++++++*/
 footer *{outline: green solid 1px;}
 .list-company{
 	list-style: none;
@@ -139,3 +139,73 @@ footer *{outline: green solid 1px;}
 .list-footer li i{font-size: 20px;}
 .footer{padding: 30px 0;}
 .footer1{line-height: 50px;}
+
+/*SERVICES=====otro index===========================================================*/
+/*contenedor verde+++++++++++++++++++*/
+.header-services{
+	padding: 50px 0;
+}
+.services li a{
+	color: white;
+	text-decoration: none;
+}
+/*contenedor iconos+++++++++++++++++++++++++++*/
+.window{padding-top: 50px;}
+.linea{border-bottom: solid 1px #E6E6FA;}/**/
+.cont-1{padding: 10px 0;}
+.cont-ico i{
+	font-size: 35px;
+	position: relative;
+	top: 20px;
+	color: white;
+	padding: 15px;
+	background: gray;
+	border-radius: 100%;
+	margin-left: 10px;
+}
+/*contenedor blockquote+++++++++++++++++++++++++++*/
+article *{outline: solid 1px green;}
+.article{padding: 30px 0 50px;}
+/*.espacio{padding-bottom: 10px;}
+.espacio1{padding-top: 10px;}*/
+
+/*PORTAFOLIO=====otro index===========================================================*/
+
+.header-portafolio{
+	padding: 50px 0;
+}
+.portafolio li a{
+	color: white;
+	text-decoration: none;
+}
+.cont-img1{
+	box-sizing:border-box;
+	padding: 8px 8px 2px;
+	background: white;
+	border: solid #E6E6FA 1px;
+	margin: 10px 0;
+}
+.cont-portafolio{padding: 40px 0;}
+
+/*BLOG=====otro index===========================================================*/
+
+.header-blog{
+	padding: 50px 0;
+}
+.terno{width: 100%;}
+.cont-parrafo{background: white;}
+.cont-parrafo h3, .cont-parrafo ul, .cont-parrafo p, .cont-parrafo .bt{
+	margin-left: 20px;
+}
+.cont-parrafo p{margin-right: 20px;}
+.cont-parrafo h3{
+	margin-top: 0; padding-top: 20px;
+}
+.bt a{color: black; text-decoration: none;}
+.bt{border: solid #E6E6FA 1px;}
+
+/*columna derecha---------------------------*/
+.better{border-radius: 5px;}
+.list-categories{
+	list-style: none;
+}
