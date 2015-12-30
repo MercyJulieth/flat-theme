@@ -97,7 +97,7 @@
 .social-net .icono{
 	float:left;
 }
-.social-net .icono i{
+.social-net .icono {position:relative; heigth:100%;
 	padding:15px;
 	border-radius: 100%;
 	font-size: 2.5em;
