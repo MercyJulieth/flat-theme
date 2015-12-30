@@ -1,4 +1,6 @@
+
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
+@import 'variables';
 
 .clearfix {
   *zoom: 1;
@@ -14,7 +16,7 @@
   clear: both;
 }
 
-{
+*{
 	outline:red solid 1px;
 }
 .bg-blue{
@@ -47,9 +49,6 @@
 	color:white;
 }
 
-body{
-	background-color:
-}
 .pd-2{
 	padding-top: 2%;
 	padding-bottom: 2%;	
