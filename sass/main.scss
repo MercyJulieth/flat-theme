@@ -192,12 +192,24 @@ article *{outline: solid 1px green;}
 /*BLOG=====otro index===========================================================*/
 
 .header-blog{
-	padding: 50px 0;
+
 }
+.cont-blog{
+	padding-top:30px;
+}
+
 .terno{width: 100%;}
 .cont-parrafo{background: white;}
 .cont-parrafo h3, .cont-parrafo ul, .cont-parrafo p, .cont-parrafo .bt{
 	margin-left: 20px;
+}
+.colores{
+	overflow:hidden;
+	border-radius:10px;
+
+}
+.colores {
+	width:100%;
 }
 .cont-parrafo p{margin-right: 20px;}
 .cont-parrafo h3{
