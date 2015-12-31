@@ -67,7 +67,7 @@
   	background-color: #123e50 !important;
 	color:white;
   }
- nav a {
+ .navbar a {
  	color:white !important;
  }
 
@@ -247,7 +247,6 @@ footer p,footer li,footer a{color:rgba(255,255,255,0.7) !important;}
 	padding: 50px 0;
 }
 .terno{width: 100%;}
-.cont-parrafo{background: white;}
 .cont-parrafo h3, .cont-parrafo ul, .cont-parrafo p, .cont-parrafo .bt{
 	margin-left: 20px;
 }
@@ -258,9 +257,25 @@ footer p,footer li,footer a{color:rgba(255,255,255,0.7) !important;}
 .bt a{color: black; text-decoration: none;}
 .bt{border: solid #E6E6FA 1px;}
 
+.post{
+	border-radius: 20px	;
+	overflow: hidden;
+	padding-bottom: 8px;
+	background: white;
+	margin-bottom: 15px;
+}
+
 /*columna derecha---------------------------*/
 .better{border-radius: 5px;}
 .list-categories{
 	list-style: none;
 }
+.categories span{
+	margin: 3px 5px;
+}
 
+/*---- CONTACT-US-----*/
+
+input:invalid{
+	background: rgba(250,240,250,1);
+}
