@@ -11,8 +11,8 @@
 .clearfix:after {
   clear: both; }
 
-* {
-  outline: red solid 1px; }
+/** {
+  outline: red solid 1px; }*/
 
 .bg-blue {
   background-color: #34495e  !important;
@@ -38,7 +38,7 @@
 .bg-gray {
   background: #f5f5f5; }
 
-.text-gree {
+.text-green {
   color: #2ecc71; }
 
 .text-white {
@@ -142,17 +142,17 @@ body {
 .gris {
   padding: 50px 0; }
 
-/*seccion red--- cients+++++++++++++++++++++++++++++++*/
+/*seccion red--- cients+++++++++++++++++++++++++++++++
 section * {
-  outline: green solid 1px; }
+  outline: green solid 1px; }*/
 
 /*seccion red--- cients++++++++++++	+++++++++++++++++++*/
 .rojo {
   padding: 50px 0; }
 
-/*footer +++++++++++++++++++++++++++++++++++++++++++++*/
+/*footer +++++++++++++++++++++++++++++++++++++++++++++
 footer * {
-  outline: green solid 1px; }
+  outline: green solid 1px; }*/
 
 .list-company {
   list-style: none; }
@@ -250,9 +250,9 @@ footer p, footer li, footer a {
   border-radius: 100%;
   margin-left: 10px; }
 
-/*contenedor blockquote+++++++++++++++++++++++++++*/
+/*contenedor blockquote+++++++++++++++++++++++++++
 article * {
-  outline: solid 1px green; }
+  outline: solid 1px green; }*/
 
 .article {
   padding: 30px 0 50px; }
