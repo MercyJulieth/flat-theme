@@ -1,4 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
+/* -----------------------------------------------------------*/
+/*________________COMMOM UTILITIES___________________________*/
 .clearfix {
   *zoom: 1; }
 
@@ -13,7 +15,6 @@
 
 /** {
   outline: red solid 1px; }*/
-
 .bg-blue {
   background-color: #34495e  !important;
   color: white !important; }
@@ -48,17 +49,6 @@
   padding-top: 2%;
   padding-bottom: 2%; }
 
-nav li a.active {
-  background-color: #123e50;
-  color: white; }
-
-nav a {
-  color: white; }
-
-.navbar {
-  margin: 0px; }
-  color: #fdfdfd; }
-
 .pd {
   padding-top: 35px;
   padding-bottom: 35px; }
@@ -71,89 +61,84 @@ nav a {
   padding-top: 5px;
   padding-bottom: 5px; }
 
+.header-blog li a {
+  color: white; }
+
+.tags .label {
+  margin: 0px 5px; }
+
+/* ------------------------------------------------------------*/
+/*________________MENU___________________________*/
+body {
+  padding-top: 60px; }
+
+.navbar-fixed-top {
+  line-height: 60px; }
+
+.navbar-nav > li > a, .navbar .navbar-brand {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  line-height: 60px; }
+
+.sombra {
+  position: fixed;
+  top: 60px;
+  z-index: 100000;
+  height: 12px;
+  width: 100%;
+  background: linear-gradient(#34495e, rgba(52, 73, 94, 0)); }
+
+@media (max-width: 768px) {
+  .navbar-fixed-top, .navbar-nav > li > a, .navbar .navbar-brand {
+    line-height: 50px; }
+
+  .navbar-nav > li > a {
+    line-height: 40px; }
+
+  .sombra {
+    top: 50px; }
+
+  .body {
+    padding-top: 50px; } }
+nav li a.active {
+  background-color: #123e50;
+  color: white; }
+
+nav a {
+  color: white; }
+
 .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
   background-color: #123e50 !important;
   color: white !important;
-  outline: solid 2px rgba(255, 255, 255, 0.2); }
+  box-shadow: 0px 0px 30px #1e324b;
+  text-shadow: 0px 0px 2px white;
+  font-weight: 200; }
 
 nav li a:hover {
-  outline: solid 1px rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 30px #1e324b;
+  text-shadow: 0px 0px 2px white;
   background-color: #123e50 !important;
   color: white; }
+
+.navbar .navbar-brand {
+  font-size: 1.7em;
+  font-weight: bolder; }
 
 .navbar a {
   color: white !important; }
 
 .navbar {
   margin: 0px;
-  border: 0;
-  min-height: 52px !important; }
+  border: 0; }
 
-body {
-  padding-top: 52px; }
+header {
+  transition: top 0.2s ease-in-out; }
 
-/*-------slider---*/
-.carousel,
-.item {
-  height: 100%; }
+.nav-up {
+  top: -60px; }
 
-.carousel-inner {
-  height: 100%; }
-
-.c-caption {
-  position: absolute;
-  top: 250px;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
-
-/* Background images are set within the HTML using inline CSS, not here */
-.fill {
-  width: 100%;
-  height: 600px;
-  background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover; }
-
-/*----Social Networks marketing------*/
-.social-net .icono {
-  float: left; }
-
-.social-net .icono {
-  position: relative;
-  heigth: 100%;
-  padding: 15px;
-  border-radius: 100%;
-  font-size: 2.5em; 
-  width: 60px;
-  height: 60px;
-  padding: 15px;
-  border-radius: 100%;
-  font-size: 2.5em;
-  text-align: center; }
-
-/*seccion gris---HOME+++++++++++++++++++++++++++++++++++++++*/
-.cont-img {
-  box-sizing: border-box;
-  padding: 10px 10px 2px;
-  background: white;
-  border: solid #E6E6FA 1px; }
-
-.gris {
-  padding: 50px 0; }
-
-/*seccion red--- cients+++++++++++++++++++++++++++++++
-section * {
-  outline: green solid 1px; }*/
-
-/*seccion red--- cients++++++++++++	+++++++++++++++++++*/
-.rojo {
-  padding: 50px 0; }
-
-/*footer +++++++++++++++++++++++++++++++++++++++++++++
-footer * {
-  outline: green solid 1px; }*/
-
+/* -------------------------------------------------------*/
+/*________________FOOTER___________________________*/
 .list-company {
   list-style: none; }
 
@@ -186,7 +171,62 @@ footer p, footer li, footer a {
 .footer1 {
   line-height: 50px; }
 
-/*------------ ABOUT-US --------------------------*/
+/* ----------------------------------------------*/
+/*________________HOME___________________________*/
+/*-------slider---*/
+.carousel,
+.item {
+  height: 100%; }
+
+.carousel-inner {
+  height: 100%; }
+
+.c-caption {
+  position: absolute;
+  top: 250px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+
+.fill {
+  width: 100%;
+  height: 600px;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+
+/*----Social Networks marketing------*/
+.social-net .icono {
+  float: left; }
+
+.social-net .icono {
+  position: relative;
+  heigth: 100%;
+  padding: 15px;
+  border-radius: 100%;
+  font-size: 2.5em;
+  width: 60px;
+  height: 60px;
+  padding: 15px;
+  border-radius: 100%;
+  font-size: 2.5em;
+  text-align: center; }
+
+/*seccion gris---HOME+++++++++++++++++++++++++++++++++++++++*/
+.cont-img {
+  box-sizing: border-box;
+  padding: 10px 10px 2px;
+  background: white;
+  border: solid #E6E6FA 1px; }
+
+.gris {
+  padding: 50px 0; }
+
+.rojo {
+  padding: 50px 0; }
+
+/* ----------------------------------------------*/
+/*________________ABOUT-US___________________________*/
 .about-us .progress {
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.2); }
@@ -196,10 +236,6 @@ footer p, footer li, footer a {
 
 .about-us .redes-sociales a {
   color: white; }
-  .about-us .redes-sociales a .about-us .fa-twitter {
-    background-color: #5bceff; }
-  .about-us .redes-sociales a .about-us.fa-linkedin {
-    background-color: #21a6d8; }
 
 .about-us .redes-sociales i {
   width: 30px;
@@ -220,15 +256,8 @@ footer p, footer li, footer a {
 .about-us .fa-linkedin {
   background-color: #21a6d8; }
 
-/*SERVICES=====otro index===========================================================*/
-/*contenedor verde+++++++++++++++++++*/
-.header-services {
-  padding: 50px 0; }
-
-.services li a {
-  color: white;
-  text-decoration: none; }
-
+/* ----------------------------------------------*/
+/*________________SERVICES___________________________*/
 /*contenedor iconos+++++++++++++++++++++++++++*/
 .window {
   padding-top: 50px; }
@@ -236,7 +265,6 @@ footer p, footer li, footer a {
 .linea {
   border-bottom: solid 1px #E6E6FA; }
 
-/**/
 .cont-1 {
   padding: 10px 0; }
 
@@ -250,27 +278,11 @@ footer p, footer li, footer a {
   border-radius: 100%;
   margin-left: 10px; }
 
-/*contenedor blockquote+++++++++++++++++++++++++++
-article * {
-  outline: solid 1px green; }*/
-
 .article {
   padding: 30px 0 50px; }
 
-/*.espacio{padding-bottom: 10px;}
-.espacio1{padding-top: 10px;}*/
-/*PORTAFOLIO=====otro index===========================================================*/
-.header-portafolio {
-  padding: 50px 0; }
-
-.portafolio li a {
-  color: white;
-  text-decoration: none; }
-
-.portafolio li a {
-  color: white;
-  text-decoration: none; }
-
+/* ----------------------------------------------*/
+/*________________PORTFOLIO___________________________*/
 .cont-img1 {
   box-sizing: border-box;
   padding: 8px 8px 2px;
@@ -281,9 +293,11 @@ article * {
 .cont-portafolio {
   padding: 40px 0; }
 
-/*BLOG=====otro index===========================================================*/
+/* ----------------------------------------------*/
+/*________________BLOG___________________________*/
 .cont-blog {
   padding-top: 30px; }
+
 .header-blog {
   padding: 50px 0; }
 
@@ -298,16 +312,8 @@ article * {
 
 .colores {
   overflow: hidden;
-  border-radius: 10px; }
-
-.colores {
+  border-radius: 10px;
   width: 100%; }
-
-.cont-parrafo p {
-  margin-right: 20px; }
-
-.cont-parrafo h3, .cont-parrafo ul, .cont-parrafo p, .cont-parrafo .bt {
-  margin-left: 20px; }
 
 .cont-parrafo p {
   margin-right: 20px; }
@@ -340,7 +346,18 @@ article * {
 .categories span {
   margin: 3px 5px; }
 
-/*---- CONTACT-US-----*/
+/* ----------------------------------------------*/
+/*________________CONTACT-US___________________________*/
+.post .media-body, .post .media-principal {
+  background: #eeeeee;
+  border-radius: 3px;
+  padding: 5px 5px; }
+
+.post .media {
+  margin: 10px 15px; }
+
+/* ----------------------------------------------*/
+/*________________CONTACT-US___________________________*/
 input:invalid {
   background: #faf0fa; }
 

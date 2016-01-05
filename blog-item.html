@@ -21,7 +21,8 @@
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
   </head><!--/head-->
   <body>
-    <nav class="navbar navbar-default navbar-fixed-top  bg-blue ">
+     <header class="lala">
+      <nav class="navbar navbar-default navbar-fixed-top  bg-blue ">
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header text-white">
@@ -31,7 +32,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>  
             </button>
-            <a class="navbar-brand" href="index.html"> <i class="text-green fa fa-heart" style="font-size:22px; margin-right:5px;"> </i> Flat Theme</a>
+            <a class="navbar-brand" href="index.html"> <i class="text-green fa fa-heart" style="font-size:24px; margin-right:5px;"> </i> Flat Theme</a>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
@@ -39,16 +40,19 @@
             <ul class=" nav navbar-nav navbar-right">
               <li ><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
               <li><a href="about-us.html">About Us</a></li>
-              <li><a href="services.html">Services</a></li> 
-              <li><a href="portfolio.html">Portfolio</a></li>
-              <li class="active"><a href="blog.html">Blog</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li class="active"><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="blog.html">Blog</a></li>
               <li><a href="contact-us.html">Contact</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
-    </nav>
-    
-    <header class="bg-green header-blog">
+
+      </nav>
+      <div class="sombra"></div>
+    </header>
+
+    <div class="bg-green header-blog">
         <div class="container">
             <h2 class="text-white">Blog</h2>
             Pallentesque habitand morbi tristique senectus et netus malesuada
@@ -58,7 +62,7 @@
                 <li><a href="" style="opacity:0.7;">Blog</a></li>
             </ul>
         </div>
-    </header>   
+    </div>   
 
     <section class="bg-gray cont-blog pd">
         <div class="container">
@@ -122,7 +126,7 @@
             <div class="col-md-8 col-md-pull-4" >
                 <div class="post ">
                     <img src="images/blog/blog1.jpg" class="img-responsive terno">
-                    <div class="cont-parrafo">
+                    <div class="cont-parrafo pd-5">
                         <h3>Duis sed odio sit amet nibt vulpatate cursus</h3>
                         <ul class="list-inline john">
                             <li><i class="fa fa-twitter"></i> John</li>
@@ -137,23 +141,85 @@
                         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime dolor eos, harum illum velit nulla soluta hic mollitia voluptatibus error. Numquam, maxime. Ab corporis reprehenderit atque ad quae, voluptates natus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam impedit illo iure, vitae maiores voluptas ab perferendis quaerat facere cum, doloremque, deleniti. Itaque facere quos eligendi perspiciatis vero, nulla, aspernatur.</p>
+            
+                        <p class="tags"> <i class="fa fa-tags"></i> Tags: <span class="label label-primary"> CSS3 </span>
+                        <span class="label label-primary"> HTML5 </span>
+                        <span class="label label-primary"> WordPress </span>
+                        <span class="label label-primary"> Joomla </span> </p>
 
-                        <hr style="border:1px solid gray">
                         
-                        <ul class="media-list">
-                          <li class="media">
-                            <div class="media-left">
+                        
+                        <ul class="media-list pd-5">
+                          <li class="media media-principal">
+                            <div class="media-left media-middle">
                               <a href="#">
-                                <img class="media-object" src="..." alt="...">
+                                <img class="media-object img-thumbnail " src="images/blog/avatar.jpg" alt="">
                               </a>
                             </div>
                             <div class="media-body">
-                              <h4 class="media-heading">Media heading</h4>
-                              
+                              <p><strong>John Doe</strong></p>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat architecto saepe, fugit deserunt minus numquam dignissimos quos ratione quam, explicabo tempora atque aperiam in, maiores officiis ullam sapiente eos velit.</p>
                             </div>
                           </li>
                         </ul>
-                                  
+                        <h3> 3 Comments</h3>
+                        <ul class="media-list">
+                          <li class="media">
+                            <div class="media-left media-middle">
+                              <a href="#">
+                                <img class="media-object img-circle" src="images/blog/avatar1.png" alt="">
+                              </a>
+                            </div>
+                            <div class="media-body">
+                              <p><strong>John Doe</strong><small> 27 Aug 2013</small> <span class="pull-right"> <i class="fa fa-reply"></i>  Reply</span></p>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat architecto saepe, fugit deserunt minus numquam dignissimos quos ratione quam, explicabo tempora atque aperiam in, maiores officiis ullam sapiente eos velit.</p>
+                            </div>
+                          </li>
+                          <li>
+                            <ul class="media-list">
+                              <li class="media">
+                                <div class="media-left media-middle">
+                                  <a href="#">
+                                    <img class="media-object img-circle" src="images/blog/avatar3.png" alt="">
+                                  </a>
+                                </div>
+                                <div class="media-body">
+                                  <p><strong>John Doe</strong><small> 27 Aug 2013</small> <span class="pull-right"> <i class="fa fa-reply"></i>  Reply</span></p>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat architecto saepe, fugit deserunt minus numquam dignissimos quos ratione quam, explicabo tempora atque aperiam in, maiores officiis ullam sapiente eos velit.</p>
+                                </div>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="media">
+                            <div class="media-left media-middle">
+                              <a href="#">
+                                <img class="media-object img-circle" src="images/blog/avatar2.png" alt="">
+                              </a>
+                            </div>
+                            <div class="media-body">
+                              <p><strong>John Doe</strong><small> 27 Aug 2013</small> <span class="pull-right"> <i class="fa fa-reply"></i>  Reply</span></p>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat architecto saepe, fugit deserunt minus numquam dignissimos quos ratione quam, explicabo tempora atque aperiam in, maiores officiis ullam sapiente eos velit.</p>
+                            </div>
+                          </li>
+                        </ul>
+                      
+                      <h3 >Leave a comment</h3>
+                    <form style="padding-left:20px;padding-right:20px">
+                        
+                                <div class="form-group pd-5">
+                                    <label for="inputname">First Name</label>
+                                    <input type="text" class="form-control" id="inputname" placeholder="Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputEmail">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+                                </div>
+                                <label for="inputEmail">Comment</label>
+                                <textarea class="form-control" placeholder="Comment" style="height:150px;margin-bottom:10px;"></textarea>
+                                <button type="submit" class="btn  btn-danger ">Submit Comment</button>
+                            
+                        </div>
+                    </form> 
                     </div>
                 </div>
 
@@ -272,25 +338,17 @@
 
 
 <script>
-
   $(document).ready(init);
-
   var sliderPosX = 0;
   var anchoSlider = 0;
   var valor=0;
-
-
-
   function init()
   {
     //inicio de aplicación
-
     $(".main-nav a").click(selectMenu);
     $('.arrow-up').click(irArriba);
     
   }
-
-
   function irArriba()
   {
     
@@ -305,17 +363,13 @@
     //TweenLite.to(window, 1, {scrollTo:{y:0}, ease: Power2.easeOut});
     //TweenLite.to("body", 1, {scrollTo: {y,0} , ease: Power2.easeOut});
   }
-
-
   function selectMenu()
   {
     //$(".main-nav a").removeClass('active');
     //$(this).addClass('active');
-
     TweenMax.to(".main-nav a", 1, {scale:1 , rotation:0 , ease: Elastic.easeOut});
     TweenMax.to(this, 1, {scale:1.5 , rotation:45 , ease: Back.easeOut});
   }
-
 </script>
 
   </body>
